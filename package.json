@@ -1,5 +1,5 @@
 {
-  "name": "nodelib",
+  "name": "scaffold-node-module",
   "version": "0.0.0-semantically-released",
   "description": "Node module for scaffolding",
   "main": "index.js",
