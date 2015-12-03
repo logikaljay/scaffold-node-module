@@ -1,0 +1,7 @@
+{
+    "extends": "./node_modules/eslint-config-chasevida/index.js",
+    "root": true,
+    "env": {
+        "node": true
+    }
+}
