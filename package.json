@@ -1,11 +1,30 @@
 {
   "name": "nodelib",
-  "version": "0.0.1",
-  "description": "Node Library",
+  "version": "0.0.0-semantically-released",
+  "description": "Node module for scaffolding",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "test": "lab",
+    "debug": "node --debug index",
+    "lint": "eslint *.js ./src/*.js ./src/**/*.js ./test/*.js ./test/**/*.js",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Jay Baker",
+  "license": "ISC",
+  "devDependencies": {
+    "code": "^2.0.1",
+    "commitizen": "^2.4.6",
+    "cz-conventional-changelog": "^1.1.5",
+    "eslint-config-chasevida": "^0.1.1",
+    "eslint-plugin-chasevida": "^0.1.2",
+    "lab": "^7.3.0",
+    "semantic-release": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
 }
