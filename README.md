@@ -6,7 +6,7 @@ The building blocks to create a node module
 ## How to use
 Run the following:
 ```
-bash <(curl -s https://raw.githubusercontent.com/logikaljay/scaffold-node-module/master/init.sh
+bash <(curl -s https://raw.githubusercontent.com/logikaljay/scaffold-node-module/master/init.sh)
 ```
 
 Or clone this repo and modify it (running scripts from the interwebs is often not the best thing to do)
