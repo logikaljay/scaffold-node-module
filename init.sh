@@ -1,7 +1,7 @@
 echo "What do you want to call this module? (some-node-module)"
 read DEST
 
-VERSION=1.0.0
+VERSION=1.1.1
 URL="https://github.com/logikaljay/scaffold-node-module/archive/v${VERSION}.zip"
 SRC="scaffold-node-module-${VERSION}"
 
