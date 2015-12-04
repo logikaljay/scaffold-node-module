@@ -13,8 +13,9 @@ curl -L -s ${URL} \
      && echo "Cleaning up." \
      && mv ${SRC} ${DEST} \
      && rm -f "tmp-module.zip" \
-     && echo "Running 'npm install'" \
      && cd ${DEST} \
+     && rm -f init.sh \
+     && echo "Running 'npm install'" \
      && sed -i '' "s/https:\/\/github.com\/logikaljay\/scaffold-node-module.git//g" package.json \
      && sed -i '' "s/scaffold-node-module/${DEST}/g" package.json \
      && sed -i '' "s/Node module for scaffolding//g" package.json \
